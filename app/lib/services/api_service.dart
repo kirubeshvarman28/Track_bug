@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 
 class ApiService {
   // Use 10.0.2.2 for Android emulator to access localhost, or actual IP for physical device
-  static const String baseUrl = 'http://127.0.0.1:5000';
+  static const String baseUrl = 'https://track-bug-api.onrender.com';
 
   static Future<Map<String, dynamic>> startScan(String target, String type) async {
     final response = await http.post(
